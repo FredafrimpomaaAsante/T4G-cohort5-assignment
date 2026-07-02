@@ -1,0 +1,52 @@
+When a client types google.com , my computer first asks the DNS to find the website IP address because the client don't have access to it .After it gets the IP address, the request goes to the load balancer which distributes it to the web server . it goes into the load balancer in order to prevent traffic due to a lot of requests coming in.Google server processes it and does extra functionality with the application server and database and sends a respnse to the client
+Client is any individual trying to request to access a website using devices like computer eg the Momo app whilst Server provides the service and responds to requests eg  the computer hosting google .com
+DNS which is the domain name system translates human-friendly names like google.com into the numeric IP address computers actually use to find each other. We need it because IP address of websites are not human friendly and need to be translated
+Firewall blocks anything that looks malicious or unauthorised when a client request to access the web whilst load balance prevents traffic when clients request to access the wed by distributing the requests to different web servers so to prevent jam or error 
+Web server is the first destination of the request which stores web files files html, css and java script whereas application server is where backend logic is stored and runs actuals business logic and talks to the database. Backend developers work with the application server more since thats where the code ,logic and database lives
+Direct access will be a huge security because anyone could query or corrupt your data.The application server sits in between to enforce authorization and also validate input before it touches the database
+University department page is likely to be a static website because it doesn't require logins ,normally like a landing page or portfolio page whereas MTN MoMo account page is a dynamic page because it does extra functionality like requiring logins and having a database
+Frontend development usually focuses on what the a user sees or interact on their mobile app whilst backend development focuses more on the server side of the website. Backend developer will handle checking password against the database  because thats where sensitive logic and data access need to happen securely.
+Web Request Journey
+
+Client
+(Sends a request to access a website.)
+        |
+        v
+DNS
+(Finds the IP address of the website.)
+        |
+        v
+Firewall
+(Checks and blocks unsafe or unwanted traffic.)
+        |
+        v
+Load Balancer
+(Distributes requests across servers to avoid overload.)
+        |
+        v
+Web Server
+(Receives the request and serves static content or forwards it.)
+        |
+        v
+Application Server
+(Processes the request and runs the application's logic.)
+        |
+        v
+Database
+(Stores and retrieves the required data.)
+        |
+        v
+Application Server
+(Receives the data and prepares the response.)
+        |
+        v
+Web Server
+(Sends the response back to the client.)
+        |
+        v
+Client
+(The browser displays the webpage to the user.)
+Command line interface gives platform for typing because most servers do not have graphical at all ,you manage them entirely through the terminal.
+Absolute path is the full path from the root of the full filesystem .Example is home/freda/T4G_assignment/notes.txt  whereas relative path is a path relative to where you are ,example is if you're inside T4G_assignment, the relative path to the file is class01/notes.txt
+CLI commands are faster for repetitive work,can be automated and are often the only option on remote servers with no graphical user interface
+ ~ means home directory whereas $ is the prompt showing the terminal is ready for your next command 
